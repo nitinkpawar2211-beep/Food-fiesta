@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elegant Eats - Food Ordering</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Elegant Eats</h1>
+            <nav>
+                <ul>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#order">Order Now</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="hero-content">
+            <h2>Indulge in Culinary Excellence</h2>
+            <p>Discover our exquisite selection of gourmet dishes, crafted with the finest ingredients.</p>
+            <a href="#menu" class="btn">View Menu</a>
+        </div>
+    </section>
+
+    <section id="menu">
+        <div class="container">
+            <h2>Our Menu</h2>
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <img src="https://via.placeholder.com/300x200?text=Truffle+Pasta" alt="Truffle Pasta">
+                    <h3>Truffle Pasta</h3>
+                    <p>Handmade pasta with black truffles and parmesan cream sauce.</p>
+                    <span>$24</span>
+                </div>
+                <div class="menu-item">
+                    <img src="https://via.placeholder.com/300x200?text=Filet+Mignon" alt="Filet Mignon">
+                    <h3>Filet Mignon</h3>
+                    <p>Prime beef tenderloin served with red wine reduction and seasonal vegetables.</p>
+                    <span>$42</span>
+                </div>
+                <div class="menu-item">
+                    <img src="https://via.placeholder.com/300x200?text=Lobster+Bisque" alt="Lobster Bisque">
+                    <h3>Lobster Bisque</h3>
+                    <p>Creamy soup with fresh lobster chunks and a hint of sherry.</p>
+                    <span>$18</span>
+                </div>
+                <div class="menu-item">
+                    <img src="https://via.placeholder.com/300x200?text=Chocolate+Lava+Cake" alt="Chocolate Lava Cake">
+                    <h3>Chocolate Lava Cake</h3>
+                    <p>Warm chocolate cake with molten center, served with vanilla ice cream.</p>
+                    <span>$12</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="order">
+        <div class="container">
+            <h2>Place Your Order</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="dish">Select Dish:</label>
+                <select id="dish" name="dish" required>
+                    <option value="">Choose a dish</option>
+                    <option value="Truffle Pasta">Truffle Pasta - $24</option>
+                    <option value="Filet Mignon">Filet Mignon - $42</option>
+                    <option value="Lobster Bisque">Lobster Bisque - $18</option>
+                    <option value="Chocolate Lava Cake">Chocolate Lava Cake - $12</option>
+                </select>
+
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+
+                <label for="address">Delivery Address:</label>
+                <textarea id="address" name="address" required></textarea>
+
+                <button type="submit" class="btn">Submit Order</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Email: info@eleganteats.com</p>
+            <p>Phone: (123) 456-7890</p>
+            <p>Address: 123 Gourmet Lane, Fine Dining City</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Elegant Eats. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
