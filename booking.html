@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flavor Fiesta - Booking</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Flavor Fiesta</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="booking">
+        <div class="container">
+            <h2>Book Your Meal</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="dish">Select Dish:</label>
+                <select id="dish" name="dish" required>
+                    <option value="">Choose a dish</option>
+                    <option value="Spicy Tacos">Spicy Tacos - $12</option>
+                    <option value="Rainbow Salad">Rainbow Salad - $15</option>
+                    <option value="Tropical Smoothie">Tropical Smoothie - $8</option>
+                    <option value="Fiery Pizza">Fiery Pizza - $18</option>
+                    <option value="Sushi Platter">Sushi Platter - $22</option>
+                    <option value="Butter Chicken">Butter Chicken - $20</option>
+                    <option value="Mango Cheesecake">Mango Cheesecake - $10</option>
+                    <option value="Grilled Salmon">Grilled Salmon - $25</option>
+                </select>
+
+                <label for="date">Booking Date:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="time">Time:</label>
+                <input type="time" id="time" name="time" required>
+
+                <label for="message">Special Requests:</label>
+                <textarea id="message" name="message"></textarea>
+
+                <button type="submit" class="btn">Book Now</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Flavor Fiesta. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
